@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterUserDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="User Registration"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Full Name"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_nic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="NIC"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/register_bd_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_select_bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Select Birth Day"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/register_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Address"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/register_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Home Town"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/set_city_dropdown"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignRight="@+id/register_city"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:padding="12dp"-->
+                    <!--android:src="@drawable/ic_arrow_drop_down" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/register_nearest_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Nearest City"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/register_nearest_location_dropdown"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignRight="@+id/register_nearest_location"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:padding="12dp"-->
+                    <!--android:src="@drawable/ic_arrow_drop_down" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/register_blood_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_border_black"
+                    android:hint="Blood Group"
+                    android:padding="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:inputType="text"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/register_blood_group_dropdown"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignRight="@+id/register_blood_group"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:padding="12dp"-->
+                    <!--android:src="@drawable/ic_arrow_drop_down" />-->
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow receive notification"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/radio_group">
+
+                <RadioButton
+                    android:id="@+id/all_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:checked="true"
+                    android:text="All Island"
+                    android:textColor="@color/colorBlack"/>
+
+                <RadioButton
+                    android:id="@+id/home_town"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Town"
+                    android:textColor="@color/colorBlack"
+                   android:layout_margin="5dp"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_save_detatils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_shape"
+                android:text="Complete Registration"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

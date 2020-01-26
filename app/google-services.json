@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1019603486215",
+    "firebase_url": "https://blood-ms-7337.firebaseio.com",
+    "project_id": "blood-ms-7337",
+    "storage_bucket": "blood-ms-7337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019603486215:android:1074e5a1a0c23c0e",
+        "android_client_info": {
+          "package_name": "com.example.hpraj.blood_donation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019603486215-1vb8kd7b6khvbcb7cuaglsn11eifn54q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hpraj.blood_donation",
+            "certificate_hash": "61d88283aaeab5db5cfcf21372e1d7124216cac6"
+          }
+        },
+        {
+          "client_id": "1019603486215-aodg163m6l9prvb2dck8nl0qrok7125v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVsD8fC0kcwZVU48AyYrBdnBuWDf2j24g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019603486215-aodg163m6l9prvb2dck8nl0qrok7125v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

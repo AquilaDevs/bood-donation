@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/donation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="donation data"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/donation_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/donation_date"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="33dp"
+            android:text="donation data"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/donation_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/donation_location"
+            android:layout_marginStart="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/donation_location"
+            android:text="donation data"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
